@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora Média</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+
+            <h1>Calculadora Média</h1>
+               <!--FORMULARIO-->
+            <form action="" method="post" id="form">
+                <div class="grupo">
+                    <label for="nota1">Nota 1</label>
+                    <input 
+                        type="number"
+                        step="0.1"
+                        min="0"
+                        max="10"
+                        class="input"
+                        id="nota1"
+                        required
+                    />
+                </div>
+                <div class="grupo">
+                    <label for="nota2">Nota 2</label>
+                    <input 
+                        type="number"
+                        step="0.1"
+                        min="0"
+                        max="10"
+                        class="input"
+                        id="nota2"
+                        required
+                    />
+                </div>
+                <!--BOTOES-->
+             <div class="grupo">
+                 <button
+                 type="submit"
+                 class="botao"
+                 id="btnCalcular">
+                 Calcular
+             </button>
+             <button
+                 type="reset"
+                 class="botao"
+                 id="btnLimpar">
+                 Limpar
+             </button>
+             </div>
+                <!--RESULTADO-->
+             <div class="grupo">
+                 <label for="MEDIA">Média</label>
+                     <input 
+                     placeholder="Média Final"
+                         type="number"
+                         class="input"
+                         id="media"
+                         name="media"
+                         readonly
+                     />
+                     <input 
+                     placeholder="Situação Final"
+                         type="text"
+                         class="input"
+                         id="situacao"
+                         name="situacao"
+                         readonly
+                     />
+             </div>
+         </div>
+            </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
